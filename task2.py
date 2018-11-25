@@ -3,9 +3,9 @@ from scapy.all import *
 
 def main():
 	
-	dest_ip="192.168.0.73"
-	src_ip="192.168.0.133"
-	dest_mac="78:0c:b8:99:b4:a2"
+	dest_ip="192.168.0.228"
+	src_ip="192.168.0.152"
+	dest_mac="08-00-27-ba-f4-a2"
 	src_mac="50:3e:aa:85:4e:9e"
 	send_icmpRedirect_packet(src_ip,dest_ip,src_mac,dest_mac)
 
